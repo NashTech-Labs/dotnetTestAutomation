@@ -1,0 +1,115 @@
+{
+	"id": "b6530b34-0db0-49dd-974c-2287c8c90a40",
+	"name": "Demo",
+	"timestamp": "2023-02-01T09:20:16.631Z",
+	"collection_id": "16007475-8d33d196-680c-4354-b598-e8d0156a558a",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 3,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-02-01T09:20:15.121Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "0bca7a2e-a12a-40ab-b10d-d4af19da16a9",
+			"name": "Get List Users",
+			"url": "https://reqres.in/api/users?page=2",
+			"time": 114,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				114
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "f514de17-c10f-4b8c-90cf-b59c41836e0b",
+			"name": "CREATE USER",
+			"url": "https://reqres.in/api/users",
+			"time": 446,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				446
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "6f09c12b-8936-461d-ada3-99ee8a5e126e",
+			"name": "GET SINGLE USER",
+			"url": "https://reqres.in/api/users/2",
+			"time": 101,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				101
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 661,
+	"collection": {
+		"requests": [
+			{
+				"id": "0bca7a2e-a12a-40ab-b10d-d4af19da16a9",
+				"method": "GET"
+			},
+			{
+				"id": "f514de17-c10f-4b8c-90cf-b59c41836e0b",
+				"method": "POST"
+			},
+			{
+				"id": "6f09c12b-8936-461d-ada3-99ee8a5e126e",
+				"method": "GET"
+			}
+		]
+	}
+}
