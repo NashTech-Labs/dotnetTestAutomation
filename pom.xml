@@ -15,7 +15,7 @@
     <gatling-maven-plugin.version>3.0.5</gatling-maven-plugin.version>
   </properties>
 
- <dependencies>
+  <dependencies>
     <dependency>
       <groupId>io.gatling.highcharts</groupId>
       <artifactId>gatling-charts-highcharts</artifactId>
@@ -30,6 +30,12 @@
       <groupId>io.gatling</groupId>
       <artifactId>gatling-recorder</artifactId>
       <version>${gatling.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.gatling/gatling-maven-plugin -->
+    <dependency>
+      <groupId>io.gatling</groupId>
+      <artifactId>gatling-maven-plugin</artifactId>
+      <version>${gatling-maven-plugin.version}</version>
     </dependency>
   </dependencies>
 
@@ -90,6 +96,16 @@
         <groupId>io.gatling</groupId>
         <artifactId>gatling-maven-plugin</artifactId>
         <version>${gatling-maven-plugin.version}</version>
+        <configuration>
+          <!--   ...  -->
+          <runMultipleSimulations>true</runMultipleSimulations>
+          <includes>
+            <include>com.myGatlingTest.*</include>
+          </includes>
+          <excludes>
+            <exclude>my.package.IgnoredSimulation</exclude>
+          </excludes>
+        </configuration>
       </plugin>
     </plugins>
   </build>

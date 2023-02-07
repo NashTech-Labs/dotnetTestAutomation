@@ -41,7 +41,7 @@ class PostPutDelete extends Simulation {
          .body(RawFileBody("data/user.json"))
          .check(
            status.is(200),
-           jsonPath("$.name").is("morpheus2"))
+           jsonPath("$.name").is("morpheus"))
 
      )
      .pause(2)
