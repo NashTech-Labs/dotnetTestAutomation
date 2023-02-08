@@ -24,3 +24,10 @@ jobs:
 
       - name: Run Tests
         run: mvn clean gatling:test
+        
+      - name: Gatling Reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: gatling Reports
+          path: target/gatling
+            
