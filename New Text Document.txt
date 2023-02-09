@@ -1,6 +1,6 @@
 1 Graphical Report Check with newman - Only html reporting is possible with newman CLI
-2 If 2 Collections runs simultaneously then check html report- 
-3 Jenkins auto trigger postman job when Github commit push- testing
+2 If 2 Collections runs simultaneously then check html report- Not feasible in postman will have to run sepearate collctions statements
+3 Jenkins auto trigger postman job when Github commit push- Done
 
 ************
 azure testing
